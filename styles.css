@@ -1,0 +1,26 @@
+
+body{
+    background-color: #F3F5FC;
+    color: rgb(0, 0, 0);
+    
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.input-procesadordetexto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 577px;
+    height: 48px;
+    top: 168px;
+    left: 240px;
+}
+.logo{
+    width: fixed(120px);
+    height: fixed(48px);
+    top: 40px;
+    left: 40px;
+    gap: 40px;
+}

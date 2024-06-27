@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 body{
     background-color: #E9ECF8;
-    color: rgb(0, 0, 0);
-    
 }
 .layout{
     display: flex;
@@ -13,24 +11,27 @@ body{
 .input{
     display: flex;
     align-items: stretch;
-    justify-content: space-evenly;
+    justify-content: space-around;
     gap: 10%;
+    color: #0A3871;
+    
 }
 .input-container{
     display: flex;
     flex-wrap: wrap;
     background-color: #D8DFE8;
-    padding: 200px 9px;
-    width: 680px;
-    height: 288px;
-    border-radius: 100px;
+    padding: 200% ;
+    border-radius: 1%;
+    border: none;
 }
 .input-container-texto{
-    width: 680px;
-    height: 288px;
-    border-radius: 100px;
+    width: 280%;
+    height: 90%;
+    border: none;
+    border-radius: 1%;
     font-family: 'Inter', sans-serif;
     background-color: #D8DFE8;
+    gap: 10%;
 }
 .logo{
     width: fixed(120px);
@@ -46,7 +47,7 @@ body{
     size: 12px;
     line-height: 18px;
     font-weight: 400;
-    gap: 8px;
+    gap: 1%;
     display: flex;
     align-items: center;
     justify-self: flex-end;
@@ -56,19 +57,18 @@ body{
     
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-family: 'Inter', sans-serif;
-    
+    width: 100%;
+    height: 100%;
     
 }
 .input-layout-botones{
     display: flex;
     flex-flow: column wrap;
-    
-    width: 680px;
-    height: 67px;
-    top: 885px;
-    left: 240px;
-    gap: 24px;
+    width: 50%;
+    height: 30px;
+    gap: 2%;
     
 }
 .input-boton{
@@ -78,11 +78,12 @@ body{
     color: white;
     size: 16px;
     text-align: center;
-    border: 1px solid #1875E8;
+    border: 1% solid #1875E8;
     padding: 16px 24px;
-    width: 100%;
-    font-size: 24px;
+    width: 50%;
+    font-size: 150%;
     margin-top: 2rem;
+    cursor: pointer;
     
 }
 .input-boton-dos{
@@ -93,10 +94,11 @@ body{
     text-align: flex-end;
     border: 1px solid #1875E8;
     padding: 16px 24px;
-    width: 100%;
+    width: 50%;
     font-size: 24px;
     margin-top: 2rem;
     align-items: center;
+    cursor: pointer;
 }
 .rectangulo{
     background-color: white;
@@ -105,8 +107,7 @@ body{
     align-items: center;
     width: 500px;
     height: 994px;
-    top: 40px;
-    left: 1000px;
+    
     border-radius: 32px;
 
 }
@@ -116,5 +117,9 @@ body{
     text-align: center;
     line-height: 28.8px;
     width: 336px;
+    cursor: pointer;
     
+}
+@media(max-width: 768px ){
+
 }

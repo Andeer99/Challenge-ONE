@@ -13,13 +13,14 @@ body{
 .input{
     display: flex;
     align-items: stretch;
+    justify-content: space-evenly;
     gap: 10%;
 }
 .input-procesadordetexto{
     display: flex;
     background-color: #D8DFE8;
+    text-align: start;
     size: 16px;
-    text-align: flex-start;
     border: 1px solid #1875E8;
     padding: 200px 9px;
     border-radius: 32px;
@@ -98,11 +99,20 @@ body{
 .rectangulo{
     background-color: white;
     display: flex;
-    align-items:flex-end;
+    justify-content: center;
+    align-items: center;
     width: 400px;
     height: 994px;
     top: 40px;
     left: 1000px;
     border-radius: 32px;
 
+}
+.rectangulo-textarea{
+    color: #343A40;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    line-height: 28.8px;
+    width: 336px;
+    
 }

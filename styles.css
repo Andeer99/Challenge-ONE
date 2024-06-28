@@ -152,3 +152,12 @@ body{
         width: 100%;
     }
 }
+@media(max-width: 375px){
+    .input-container-texto{
+        width: 100%;
+        height: 200%;
+    }
+    .rectangulo{
+        width: 100%;
+    }
+}

@@ -120,22 +120,25 @@ body{
     
 }
 @media(max-width: 768px ){
+    .layout{
+        gap: 20%
+    }
     .input{
         display: flex;
         justify-content: center;
         flex-direction: column;
+        gap: 70px;
     }
     
     .input-container-texto{
-        width: 88%;
-        height: 90%;
-        height: auto;
+        width: 400px;
+        height: 288px;
+        
     }
     .rectangulo{
         display: flex;
         justify-content: space-around;
-        gap: 5000px;
-        width: 88%;
+        width: 100%;
         height: auto;
     }
     body{

@@ -1,28 +1,27 @@
-let imagenSustituida;
+let textoUsuario;
+let textoEncriptado;
 let textoDesencriptado;
-
-function sutituirTextoPorImagen(){
-    imagenSustituida= document.getElementById("desEncriptador").style.display= "none";
-}
-function devolverImagen(){
-    imagenSustituida= document.getElementById("desEncriptador").style.display= "flex";
-    return;
-}
 function encriptarTexto(){
-    let textoUsuario = document.getElementById("containertexto").value;
-    let textoEncriptado = textoUsuario.replace(/[aeiou]/gi, function(match) {
+    textoUsuario = document.getElementById("containertexto").value;
+    textoEncriptado = textoUsuario.replace(/[aeiou]/gi, function(match) {
         switch (match.toLowerCase()) {
-            case 'a': return 'e';
-            case 'e': return 'i';
-            case 'i': return 'o';
-            case 'o': return 'u';
-            case 'u': return 'a';
+            case 'a': return 'ai';
+            case 'e': return 'enter';
+            case 'i': return 'imes';
+            case 'o': return 'ober';
+            case 'u': return 'ufat';
         }
     });
-    sutituirTextoPorImagen();
     document.getElementById("desEncriptador").innerText = textoEncriptado;
 
 }
-function condicionesIniciales(){
-    devolverImagen();
+function desencriptarTexto(){
+    textoUsuario = document.getElementById("containertexto").value;
+    textoDesencriptado = textoUsuario
+        .replace(/ai/g, 'a')
+        .replace(/enter/g, 'e')
+        .replace(/imes/g, 'i')
+        .replace(/ober/g, 'o')
+        .replace(/ufat/g, 'u');
+    document.getElementById("desEncriptador").innerText = textoDesencriptado;
 }
